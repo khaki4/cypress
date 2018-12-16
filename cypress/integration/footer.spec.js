@@ -7,7 +7,7 @@ describe('Footer', () => {
     ];
 
     cy.seedAndVisit('fixture:mixed_todos');
-    
+
     cy.wrap(fileters)
       .each(filter => {
         cy.contains(filter.link).click();

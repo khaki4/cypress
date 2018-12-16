@@ -22,9 +22,6 @@ describe('List Item Behavior', () => {
 
     cy.wait('@delete');
 
-    cy
-      .get('@list')
-      .should('have.length', 3);
 
   });
 });
