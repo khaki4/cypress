@@ -26,7 +26,7 @@ export default class TodoApp extends Component {
       loadTodos()
         .then(({ data }) => this.setState({ todos: data }))
         .catch(() => this.setState({ error: true }));
-    }, 5000);
+    });
   }
 
   handleNewTodoChange(evt) {
